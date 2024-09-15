@@ -5,6 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hassan Nojavan - Homepage</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .toggle-dark-mode {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        body.dark-mode {
+            background-color: #1e1e1e;
+            color: #f4f4f4;
+        }
+
+        header.dark-mode {
+            background-color: #222;
+        }
+
+        footer.dark-mode {
+            background-color: #222;
+        }
+
+        nav ul li a.dark-mode {
+            color: #ddd;
+        }
+
+        .toggle-dark-mode.dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,7 +91,7 @@
             <ul>
                 <li><a href="#biography">Biography</a></li>
                 <li><a href="#publications">Publications</a></li>
-                <li><a href="#talks">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -24,32 +101,32 @@
     <section id="biography">
         <h2>Biography</h2>
         <p>
-        I am Hassan Nojavan, a Ph.D. student studying operations research at Southern Methodist University (SMU).        </p>
+            I am Hassan Nojavan, a Ph.D. student studying operations research at Southern Methodist University (SMU).
+        </p>
     </section>
 
     <section id="publications">
         <h2>Publications</h2>
         <ul>
-            <li>
-
-            </li>
+            <li>Research Paper 1</li>
+            <li>Research Paper 2</li>
         </ul>
     </section>
 
-    <section id="Projects">
+    <section id="projects">
         <h2>Projects</h2>
         <ul>
-            <li>
-            </li>
+            <li>Project 1: Web app using React and Node.js</li>
+            <li>Project 2: E-commerce platform with Django</li>
         </ul>
     </section>
 
     <footer>
         <div class="social-links">
             <a href="https://scholar.google.com/" target="_blank">Google Scholar</a> |
-            <a href="https://github.com/" target="_blank">Github</a> |
+            <a href="https://github.com/" target="_blank">GitHub</a> |
             <a href="https://twitter.com/" target="_blank">Twitter</a> |
-            <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
         </div>
         <p>© 2024 Hassan Nojavan. All rights reserved.</p>
     </footer>
@@ -57,10 +134,21 @@
     <script>
         function toggleDarkMode() {
             const body = document.body;
+            const header = document.querySelector('header');
+            const footer = document.querySelector('footer');
+            const links = document.querySelectorAll('nav ul li a');
+            const button = document.querySelector('.toggle-dark-mode');
+
             body.classList.toggle('dark-mode');
+            header.classList.toggle('dark-mode');
+            footer.classList.toggle('dark-mode');
+            button.classList.toggle('dark-mode');
+
+            links.forEach(link => {
+                link.classList.toggle('dark-mode');
+            });
 
             const isDarkMode = body.classList.contains('dark-mode');
-            const button = document.querySelector('.toggle-dark-mode');
             button.textContent = isDarkMode ? 'Toggle Light Mode' : 'Toggle Dark Mode';
         }
     </script>
