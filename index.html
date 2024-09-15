@@ -3,72 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hassan Nojavan - Personal Website</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Hassan Nojavan - Homepage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Hassan Nojavan</h1>
+        <p>Ph.D. student | SMU</p>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#projects">Publications</a></li>
+                <li><a href="#biography">Biography</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#talks">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <button class="toggle-dark-mode" onclick="toggleDarkMode()">Toggle Dark Mode</button>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am Hassan Nojavan, a Ph.D. student studying operations research at Southern Methodist University (SMU).</p>
+    <section id="biography">
+        <h2>Biography</h2>
+        <p>
+        I am Hassan Nojavan, a Ph.D. student studying operations research at Southern Methodist University (SMU).        </p>
     </section>
 
+    <section id="publications">
+        <h2>Publications</h2>
+        <ul>
+            <li>
 
+            </li>
+        </ul>
+    </section>
 
+    <section id="Projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://scholar.google.com/" target="_blank">Google Scholar</a> |
+            <a href="https://github.com/" target="_blank">Github</a> |
+            <a href="https://twitter.com/" target="_blank">Twitter</a> |
+            <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+        </div>
+        <p>© 2024 Hassan Nojavan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+
+            const isDarkMode = body.classList.contains('dark-mode');
+            const button = document.querySelector('.toggle-dark-mode');
+            button.textContent = isDarkMode ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+        }
+    </script>
 </body>
 </html>
