@@ -4,7 +4,7 @@ title: "Hassan Nojavan"
 ---
 
 <p align="center">
-  <img src="profile.jpg" alt="Hassan Nojavan" width="160" style="border-radius: 50%; margin-bottom: 1rem;">
+  <img src="Hassan1.jpg" alt="Hassan Nojavan" width="160" style="border-radius: 50%; margin-bottom: 1rem;">
 </p>
 
 # Hassan Nojavan
