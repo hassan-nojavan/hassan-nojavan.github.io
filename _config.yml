@@ -1,8 +1,5 @@
 title: "Hassan Nojavan"
-description: "PhD Student · Optimization"
-remote_theme: pages-themes/hacker@v0.2.0
-
-plugins:
-  - jekyll-remote-theme
-
-show_downloads: false
+description: "PhD Student in Operations Research & Engineering Management at SMU."
+theme: jekyll-theme-hacker
+url: "https://hassan-nojavan.github.io"
+baseurl: ""
