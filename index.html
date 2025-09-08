@@ -6,10 +6,10 @@
   <title>Hassan Nojavan</title>
   <style>
     :root{
-      --ink:#0b1220;
-      --muted:#4b5566;
-      --blue:#0a3d91;
-      --rule:#e6eefc;
+      --ink:#0a2540;
+      --muted:#4b5d77;
+      --blue:#0f6ab4;
+      --rule:#d6e3ff;
       --maxw:1100px;
     }
     *{box-sizing:border-box}
@@ -18,27 +18,26 @@
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
       color:var(--ink);
       line-height:1.6;
-      background:#fff;
+      background:#ffffff;
     }
     .wrap{
       max-width:var(--maxw);
-      margin:36px auto 28px;
-      padding:0 16px;
+      margin:40px auto;
+      padding:0 20px;
       display:grid;
       grid-template-columns: 1fr;
       gap:28px;
     }
     @media (min-width:920px){
-      .wrap{grid-template-columns: 0.95fr 1.05fr; align-items:start;}
+      .wrap{grid-template-columns:0.9fr 1.1fr; align-items:start;}
     }
-
     .left{
       display:flex;
       flex-direction:column;
-      gap:16px;
+      gap:18px;
     }
     .name{
-      font-size:clamp(28px,4.6vw,48px);
+      font-size:clamp(32px,4.8vw,52px);
       line-height:1.1;
       font-weight:800;
       color:var(--blue);
@@ -48,35 +47,34 @@
       width:100%;
       aspect-ratio:4/5;
       object-fit:cover;
-      border:1px solid var(--rule);
+      border:2px solid var(--rule);
     }
-
-    .right section{margin-bottom:22px}
+    .right section{margin-bottom:24px}
     h2{
-      margin:0 0 10px;
+      margin:0 0 12px;
       font-size:clamp(18px,2vw,22px);
       color:var(--blue);
       border-bottom:2px solid var(--rule);
       padding-bottom:6px;
-      letter-spacing:.2px;
+      font-weight:700;
     }
     p{margin:6px 0}
     .muted{color:var(--muted)}
-    .kv{margin:0; padding-left:18px}
-    .kv li{margin:4px 0}
+    ul{margin:0; padding-left:18px}
+    li{margin:4px 0}
     footer{
       border-top:1px solid var(--rule);
-      margin-top:6px;
+      margin-top:16px;
     }
     .links{
       max-width:var(--maxw);
       margin:0 auto;
-      padding:14px 16px 24px;
+      padding:16px 20px 28px;
       text-align:center;
       font-weight:600;
     }
     .links a{
-      color:#0f6ab4;
+      color:var(--blue);
       text-decoration:none;
     }
     .links a:hover{text-decoration:underline}
@@ -90,30 +88,28 @@
     </div>
 
     <div class="right">
-      <section aria-labelledby="bio">
-        <h2 id="bio">Biography</h2>
-        <p class="muted">PhD Student in Operations Research & Engineering Management, Southern Methodist University (SMU). My work focuses on robust optimization and recommender systems, with an emphasis on weighted ERM, SLIM variants, and scalable algorithms.</p>
+      <section>
+        <h2>Biography</h2>
+        <p class="muted">
+          PhD Student in Operations Research at Southern Methodist University (SMU).  
+        </p>
       </section>
 
-      <section aria-labelledby="edu">
-        <h2 id="edu">Education</h2>
-        <ul class="kv">
-          <li>PhD (Operations Research & Engineering Management), Southern Methodist University</li>
-          <li>BS (Your Major), Your University</li>
+      <section>
+        <h2>Education</h2>
+        <ul>
+          <li>PhD (Operations Research & Engineering Management), SMU</li>
         </ul>
       </section>
 
-      <section aria-labelledby="research">
-        <h2 id="research">Research Interests</h2>
-        <ul class="kv">
-          <li>Large-scale optimization for fair and robust ML</li>
-          <li>Top-N recommendation, SLIM and robust variants</li>
-          <li>Data valuation and Shapley-based pruning</li>
+      <section>
+        <h2>Research Interests</h2>
+        <ul>
         </ul>
       </section>
 
-      <section aria-labelledby="contact">
-        <h2 id="contact">Contact</h2>
+      <section>
+        <h2>Contact</h2>
         <p>Email: <a href="mailto:hnojavan@smu.edu">hnojavan@smu.edu</a></p>
         <p>Dallas, TX</p>
       </section>
