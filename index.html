@@ -17,111 +17,102 @@
       margin:0;
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
       color:var(--ink);
+      background:#fff;
       line-height:1.6;
-      background:#ffffff;
     }
-    .wrap{
-      max-width:var(--maxw);
-      margin:40px auto;
-      padding:0 20px;
-      display:grid;
-      grid-template-columns: 1fr;
-      gap:28px;
-    }
-    @media (min-width:920px){
-      .wrap{grid-template-columns:0.9fr 1.1fr; align-items:start;}
-    }
-    .left{
-      display:flex;
-      flex-direction:column;
-      gap:18px;
+    .container{max-width:var(--maxw); margin:40px auto; padding:0 20px;}
+    .topbar{
+      display:flex; align-items:flex-end; gap:18px; padding-bottom:14px;
     }
     .name{
+      margin:0;
       font-size:clamp(32px,4.8vw,52px);
-      line-height:1.1;
       font-weight:800;
       color:var(--blue);
-      margin:0;
+      line-height:1.1;
+    }
+    .rule{border:0; border-top:2px solid var(--rule); margin:10px 0 24px;}
+    .grid{
+      display:grid; gap:26px;
+      grid-template-columns: 1fr;
+    }
+    @media(min-width:900px){
+      .grid{grid-template-columns: 0.9fr 1.1fr; align-items:start;}
     }
     .portrait{
-      width:100%;
-      aspect-ratio:4/5;
-      object-fit:cover;
-      border:2px solid var(--rule);
+      width:100%; aspect-ratio:4/5; object-fit:cover; border:2px solid var(--rule);
     }
-    .right section{margin-bottom:24px}
     h2{
-      margin:0 0 12px;
-      font-size:clamp(18px,2vw,22px);
-      color:var(--blue);
+      margin:0 0 10px; padding-bottom:6px;
       border-bottom:2px solid var(--rule);
-      padding-bottom:6px;
-      font-weight:700;
+      color:var(--blue); font-size:clamp(18px,2vw,22px);
     }
     p{margin:6px 0}
-    .muted{color:var(--muted)}
     ul{margin:0; padding-left:18px}
     li{margin:4px 0}
-    footer{
-      border-top:1px solid var(--rule);
-      margin-top:16px;
-    }
+    .muted{color:var(--muted)}
+    footer{border-top:1px solid var(--rule); margin-top:20px;}
     .links{
-      max-width:var(--maxw);
-      margin:0 auto;
-      padding:16px 20px 28px;
-      text-align:center;
-      font-weight:600;
+      text-align:center; padding:16px 10px 26px; font-weight:600;
     }
-    .links a{
-      color:var(--blue);
-      text-decoration:none;
-    }
+    .links a{color:var(--blue); text-decoration:none}
     .links a:hover{text-decoration:underline}
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <div class="left">
+  <div class="container">
+    <div class="topbar">
       <h1 class="name">Hassan Nojavan</h1>
-      <img src="/Hassan1.jpg" alt="Hassan Nojavan" class="portrait">
+    </div>
+    <hr class="rule">
+
+    <div class="grid">
+      <div>
+        <img src="/Hassan1.jpg" alt="Hassan Nojavan" class="portrait">
+      </div>
+
+      <div>
+        <section>
+          <h2>Education</h2>
+          <ul>
+            <li>PhD, Operations Research &amp; Engineering Management — Southern Methodist University</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Research Interests</h2>
+          <ul>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Contact</h2>
+          <p>Email: <a href="mailto:hnojavan@smu.edu">hnojavan@smu.edu</a></p>
+          <p>Phone: <a href="tel:+14245379656">424-537-9656</a></p>
+          <p>Dallas, TX</p>
+        </section>
+      </div>
     </div>
 
-    <div class="right">
-      <section>
-        <h2>Biography</h2>
-        <p class="muted">
-          PhD Student in Operations Research at Southern Methodist University (SMU).  
-        </p>
-      </section>
+    <section>
+      <h2>Biography</h2>
+      <p class="muted">
+      </p>
+    </section>
 
-      <section>
-        <h2>Education</h2>
-        <ul>
-          <li>PhD (Operations Research & Engineering Management), SMU</li>
-        </ul>
-      </section>
+    <section>
+      <h2>News</h2>
+      <ul>
+      </ul>
+    </section>
 
-      <section>
-        <h2>Research Interests</h2>
-        <ul>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:hnojavan@smu.edu">hnojavan@smu.edu</a></p>
-        <p>Dallas, TX</p>
-      </section>
-    </div>
-  </main>
-
-  <footer>
-    <div class="links">
-      <a href="https://github.com/hassan-nojavan">GitHub</a> •
-      <a href="https://www.linkedin.com/in/hassan-nojavan/">LinkedIn</a> •
-      <a href="mailto:hnojavan@smu.edu">Email</a>
-    </div>
-  </footer>
+    <footer>
+      <div class="links">
+        <a href="https://github.com/hassan-nojavan">GitHub</a> •
+        <a href="https://www.linkedin.com/in/hassan-nojavan/">LinkedIn</a> •
+        <a href="mailto:hnojavan@smu.edu">Email</a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
