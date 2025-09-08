@@ -1,8 +1,9 @@
 ---
 layout: default
 title: "Hassan Nojavan"
+description: "PhD Student in Operations Research & Engineering Management at SMU."
+permalink: /
 ---
-
 <p align="center">
   <img src="Hassan1.jpg" alt="Hassan Nojavan" width="160" style="border-radius: 50%; margin-bottom: 1rem;">
 </p>
