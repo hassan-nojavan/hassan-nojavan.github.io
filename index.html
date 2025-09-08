@@ -34,20 +34,21 @@
     }
     .rule{border:0; border-top:2px solid var(--rule); margin:10px 0 24px;}
     .grid{
-      display:grid; gap:26px;
-      grid-template-columns: 1fr;
-    }
-    @media(min-width:900px){
+        display:grid; 
+        gap:26px;
+        grid-template-columns: 1fr;
+      }
+      @media(min-width:900px){
         .grid {
           grid-template-columns: 30% 70%;
-          align-items: start; 
+          align-items: center;  /* centers image relative to text */
         }
-    }
-    .left {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    }
+      }
+    
+      .left {
+        display: flex;
+        justify-content: center; /* center image horizontally */
+      }
 
     .portrait{
       width:70%; aspect-ratio:4/5; object-fit:cover; border:2px solid var(--rule);
