@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Paper Available Soon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #f8f9fa;
+      color: #222;
+    }
+
+    .box {
+      max-width: 650px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #0047ab;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h1>Paper Available Soon</h1>
+
+    <p>
+      Thank you for your interest in our work!
+    </p>
+
+    <p>
+      The full paper will be available soon.
+    </p>
+
+    <p>
+      Please check back again soon, and feel free to reach out if you have any questions.
+    </p>
+
+    <p>
+      <a href="https://hassan-nojavan.github.io/">Back to homepage</a>
+    </p>
+  </div>
+</body>
+</html>
